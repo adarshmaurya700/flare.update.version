@@ -1,6 +1,5 @@
 # 🏛️ CivicDedupe — Intelligent Municipal Complaint Deduplication
 
-**HackIIITD (Esya) | IIIT Delhi**
 
 CivicDedupe is an AI-powered middleware for Indian municipalities that deduplicates multimodal citizen complaints (Image + Text + GPS) into Master Incident Tickets using spatial filtering, visual embeddings, and semantic text similarity.
 
@@ -14,17 +13,7 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Open **http://localhost:8501** in your browser.
 
-## Demo Scenarios (For Judges)
-
-Use the **"Demo Quick-Fill"** dropdown in the left panel:
-
-| Scenario | Description | Expected Result |
-|----------|-------------|-----------------|
-| 🔴 **A** | Sewage overflow ~18m from Ticket #1 | **DUPLICATE** → merges into Ticket #1 |
-| 🟡 **B** | Broken pavement ~25m from Ticket #1 | **NEW INCIDENT** (different category) |
-| 🟢 **C** | Fallen tree ~1.5km away | **NEW INCIDENT** (outside 60m radius) |
 
 ## Architecture
 
